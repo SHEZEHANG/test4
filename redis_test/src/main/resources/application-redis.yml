@@ -1,0 +1,15 @@
+server:
+  port: 8081
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+      username: root
+      password: root
+      stat-view-servlet:
+        enabled: true
+  redis:
+    host: 192.168.233.129
+REDIS_TEST: REDIS_TEST
